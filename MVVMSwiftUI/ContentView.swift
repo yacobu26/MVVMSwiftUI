@@ -25,6 +25,9 @@ struct ContentView: View {
                 Text("Additional Infromation")
                     .font(.subheadline)
                     .fontWeight(.semibold)
+                
+                Spacer()
+                
             }
             
             
