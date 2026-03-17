@@ -21,6 +21,10 @@ struct ContentView: View {
                 Text("Profile")
                     .font(.largeTitle)
                     .fontWeight(.bold)
+                
+                Text("Additional Infromation")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
             }
             
             
