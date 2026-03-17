@@ -11,12 +11,19 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.blue.opacity(0.2).ignoresSafeArea()
+            VStack {
+                Image(systemName: "person.crop.circle")
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundStyle(.white)
+                    .padding()
+                
+                Text("Profile")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+            }
             
-            Image(systemName: "person.crop.circle")
-                .resizable()
-                .scaledToFit()
-                .foregroundStyle(.white)
-                .padding()
+            
         }
     }
 }
