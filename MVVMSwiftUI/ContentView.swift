@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let listOfItems: [String] = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10"]
+    
     var body: some View {
         ZStack {
             Color.blue.opacity(0.2).ignoresSafeArea()
@@ -28,6 +31,9 @@ struct ContentView: View {
                 
                 Spacer()
                 
+                List(listOfItems, id:\.self) { item in 
+                    
+                }
             }
             
             
